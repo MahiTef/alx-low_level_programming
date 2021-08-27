@@ -9,7 +9,9 @@ int main(void)
 
 	for (words = 'a' ; words <= 'z' ; words++)
 		putchar(words);
-	printf("\n")
 
-		return (0);
+	putchar('\n');
+
+	return (0);
 }
+,
