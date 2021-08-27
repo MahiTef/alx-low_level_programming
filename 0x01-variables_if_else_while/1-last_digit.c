@@ -5,7 +5,7 @@
  * main - print the last digit of the number stored in the variable n
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	int n;
 	char last[] = "Last digit of";
