@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 1; i <= 89; i++)
 	{
-		putchar((i/10) + '0');
+		putchar((i / 10) + '0');
 		putchar((i % 10) + '0');
 		if (i != 89)
 		{
