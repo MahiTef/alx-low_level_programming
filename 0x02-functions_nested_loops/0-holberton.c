@@ -1,17 +1,18 @@
-#include "main.h"
+#include "stdio.h"
 /**
  * main - prints Holberton
- * Return: return 0
+ * Return: 0
  */
 int main(void)
 {
-	char *c = "_putchar";
-	int i;
-
-	for (i = 0; i < 10; i++)
-	{
-		_putchar(c[i]);
-	}
-	_putchar('\n');
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
 	return (0);
 }
