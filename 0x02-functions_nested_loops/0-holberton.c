@@ -7,9 +7,11 @@
 int main(void)
 {
 	char *c = "_putchar";
-	int i;
-	for (i = 0; i < 10; i++) {
-	_putchar(c[i]);
+
+	while (c)
+	{
+		_putchar(*c);
+		c++;
 	}
 	_putchar('\n');
 	return (0);
