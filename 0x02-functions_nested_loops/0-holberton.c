@@ -1,17 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * main - prints Holberton
  * Return: 0
  */
 int main(void)
 {
-	char c[] = "_putchar";
-	int i;
+	char *ch = "_putchar";
 
-	for (i = 0; i < 9; i++)
+	while (*ch)
 	{
-		_putchar(c[i]);
+		_putchar(*ch);
+		ch++;
 	}
 	_putchar('\n');
-	return (0);
+return (0);
 }
