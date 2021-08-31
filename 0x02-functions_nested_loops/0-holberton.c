@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - prints Holberton
- * Return: 0
+ * Return: return 0
  */
 int main(void)
 {
