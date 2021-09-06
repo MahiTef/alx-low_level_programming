@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+1#include <stdio.h>
 
 /**
  * print_array - prints n elements of an array of integers
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 	while (i < n)
 	{
 		printf("%d", a[i]);
-		if (i < (n -1))
+		if (i < (n - 1))
 			printf(", ");
 		i++;
 	}
