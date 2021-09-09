@@ -1,4 +1,6 @@
-ktrcat - concatenate two strings
+#include "main.h"
+/**
+*_strcat - function that concatenates two strings
 * @dest: char string to concatenate to
 * @src: char string
 * Return: pointer to resulting string `dest`
