@@ -1,27 +1,35 @@
 #include "main.h"
 
 /**
- *print_number - prints an integer.
- *only using the putchar function.
- *noarrays and pointers.
- *@n: integer to be printed.
+ *rot13 - encodes strings using rot13.
+ *@s: pointer to string.
  *
- *Return: void.
+ *Return: pointer to encoded string.
  */
-void print_number(int n)
+char *rot13(char *s)
 {
-	unsigned int num;
-/*check if number is negative*/
-	num = n;
-	if (n < 0)
+	int stringCount, rotation;
+	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		     'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		     'Z'};
+	char r2[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		     'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		     'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		     'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		     'M'};
+
+	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
 	{
-		_putchar(45);
-		num = -n;
+		for (rotation = 0; rotation < 53; rotation++)
+		{
+			if (r1[rotation] == s[stringCount])
+			{
+				s[stringCount] = r2[rotation];
+				break;
+			}
+		}
 	}
-/* print number by recursion*/
-	if (num / 10)
-	{
-		print_number(num / 10);
-	}
-	_putchar((num % 10) + '0');
+	return (s);
 }
