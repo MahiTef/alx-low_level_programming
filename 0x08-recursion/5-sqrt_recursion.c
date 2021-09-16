@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
- * _sqrt_recursion - return the natural square root of a number
- * @n: int number
- * Return: If no natural square root, return -1. Else return natural
- * square root
- */
-
+  *helperFunction - checks if sqrt of number exists
+  *@num: number.
+  *@pSqrt: poissible sqrt of number.
+  *
+  *Return: sqrt of number ot -1 for error.
+  */
 int helperFunction(int num, int pSqrt)
 {
 	if ((pSqrt * pSqrt) == num)
